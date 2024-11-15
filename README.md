@@ -5,8 +5,6 @@
 2.	извлеченные из загруженного архива файлы сохраняет в S3 хранилище, для локального тестирования необходимо использовать [MinIO](https://hub.docker.com/r/minio/minio) или [Seaweedfs(S3)](https://github.com/seaweedfs/seaweedfs), запущенный в docker-контейнере;
 3.	извлеченный файл просканировать набором [YARA-правил](https://github.com/kevoreilly/CAPEv2/tree/master/data/yara/CAPE), результат сканирования сохранить в виде json в S3-хранилище.
 
-Скрипт реализован в виде [Airflow DAG](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html) для ежедневного запуска и обработки данных.
-
 Решение оформлено в виде проекта с использованием pyproject.toml
 
 ## Запуск проекта
