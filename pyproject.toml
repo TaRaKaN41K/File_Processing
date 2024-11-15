@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "File_Processing"
+version = "0.1.0"
+description = "A utility to download, process, and scan files from VX Underground, and save results to S3."
+authors = ["Kalashov Feodor"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.60"
+botocore = "^1.35.60"
+Brotli = "^1.1.0"
+certifi = "^2024.8.30"
+charset-normalizer = "^3.4.0"
+idna = "^3.10"
+inflate64 = "^1.0.0"
+jmespath = "^1.0.1"
+multivolumefile = "^0.2.3"
+psutil = "^6.1.0"
+py7zr = "^0.22.0"
+pybcj = "^1.0.2"
+pycryptodomex = "^3.21.0"
+pyppmd = "^1.1.0"
+python-dateutil = "^2.9.0.post0"
+python-dotenv = "^1.0.1"
+pyzstd = "^0.16.2"
+requests = "^2.32.3"
+s3transfer = "^0.10.3"
+six = "^1.16.0"
+texttable = "^1.7.0"
+urllib3 = "^2.2.3"
+yara-python = "^4.5.1"
